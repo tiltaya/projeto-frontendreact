@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import styled, { createGlobalStyle } from "styled-components";
 import './App.css';
+import { Filters } from './Components/Filters/Filters';
+import { Home } from './Components/ProductList/Home/Home';
+import { Cart } from './Components/ShoppingCart/Cart/Cart';
+import Header from "./Components/Header/Header";
+
+const GlobalStyle = createGlobalStyle`
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Header />
+      <Filters />
+      <Home />
+      <Cart />
+    </>
   );
 }
 
