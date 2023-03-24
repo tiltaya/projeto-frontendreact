@@ -4,6 +4,7 @@ import { Filters } from './Components/Filters/Filters';
 import { Home } from './Components/ProductList/Home/Home';
 import { Cart } from './Components/ShoppingCart/Cart/Cart';
 import Header from "./Components/Header/Header";
+import { productList } from "./Components/assets/productsList";
 
 const GlobalStyle = createGlobalStyle`
   *{

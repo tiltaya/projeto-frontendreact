@@ -2,6 +2,7 @@ import { ProductCartt } from "./productCardStyle"
 import { FilterProdCart } from "./productCardStyle"
 import { Card } from "./productCardStyle"
 import { CartProdCart } from "./productCardStyle"
+import { productList } from "../../assets/productsList"
 
 export function ProductCart() {
     return (
